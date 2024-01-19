@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                // alert("The Button is Clicked");
+                $("#sp").html("Hello User What Can I Do For You");
+                $("#sp").css("color","red");
+                $("#sp").css("font-size","26px");
+                $("#sp").fadeOut(5000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>jQuery Enviroment Setup</h1>
+    <hr />
+    <br>
+    <span id="sp"></span>
+    <br>
+    <br>
+    <input type="button" value="Click Me" id="btn"/>
+</body>
+</html>
