@@ -11,10 +11,28 @@
     <script>
             $(document).ready(function(){
                 $("#parent").accordion();
+                $("#txtdate").datepicker({
+                    dateFormat:"dd/mm/yy",
+                    numberOfMonths:3,
+                });
+
             });
     </script>
+    <style>
+        h2{
+            background-color: violet !important;
+            color: white !important;
+            padding: 10px !important;
+            margin: 10px !important;
+        }
+    </style>
 </head>
 <body>
+    <hr>
+    <h3>Date of joining</h3>
+    <hr>
+    <input type="text" id="txtdate" placeholder="Enter Date Of Joining">
+    <br><br>
     <div id="parent">
         <h2>About Java</h2>
         <div>
